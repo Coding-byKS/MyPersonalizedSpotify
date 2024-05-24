@@ -6,3 +6,9 @@
     word-wrap: break-word;
     
   }
+
+  .userShowImage{
+   
+  height: 700px;
+  overflow-y: scroll;
+  }

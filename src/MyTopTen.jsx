@@ -38,7 +38,7 @@ fetchHandler();
     <div className='showContainer'>
        
      <div style={{fontSize:"40px", fontWeight:"bolder"}}>{show.name}</div>
-     <img src={image} style={{ maxHeight:"600px"}}/>     
+     <div className="showImage"><img  src={image} style={{ width:"100%"}}/>   </div>  
      <div style={{fontSize:"30px"}}>Language: {show.language}</div>      
      <div style={{fontSize:"30px"}}>Average Rating: {rating}</div>
      <div style={{fontSize:"30px", display:"flex", flexDirection:"column"}}> Official Site: <a  style={{color:"black"}} href={show.officialSite}>{show.officialSite}</a></div>
