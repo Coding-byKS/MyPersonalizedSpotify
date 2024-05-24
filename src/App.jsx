@@ -34,7 +34,7 @@ export default function App() {
   
   return (
     <div className="App">
-      <h1>Hi, which TV show would like to know more about?</h1>
+      <h1>Hi, which TV show would you like to know more about?</h1>
       <form style={{fontSize:"70px"}}>
         {!userShow&&<input style={{fontSize:"30px"}} required type="text" onChange={handleChange} value={showInput}></input>}
         {!userShow&&<input style={{fontSize:"30px"}} onClick={handleSubmit} type="submit" />}
