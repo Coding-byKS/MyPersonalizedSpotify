@@ -6,7 +6,7 @@ import UserShowSearch from "./UserShowSearch";
 
 
 export default function App() {
-  const shows = ["man men", "the office", "rick and morty"," death note", "taskmaster", "bojack horseman"]
+  const shows = ["man men", "the office", "rick and morty"," Killing eve", "taskmaster", "bojack horseman"]
   
   const [showInput, getShow]=useState("");
   const [userShow, fetchShow]=useState("");
@@ -36,9 +36,10 @@ export default function App() {
     <div className="App">
       <h1>Hi, which TV show would like to know more about?</h1>
       <form style={{fontSize:"70px"}}>
-        {!userShow&&<input required type="text" onChange={handleChange} value={showInput}></input>}
-        {!userShow&&<input onClick={handleSubmit} type="submit" />}
-        {userShow&&<button onClick={handleReset}>Search Another Show</button>}
+        {!userShow&&<input style={{fontSize:"30px"}} required type="text" onChange={handleChange} value={showInput}></input>}
+        {!userShow&&<input style={{fontSize:"30px"}} onClick={handleSubmit} type="submit" />}
+        {!userShow&&<p style={{fontSize:"30px"}}>Examples: Blue Lights, Baby Reindeer, IT Crowd, Fleabag, Derry Girls......</p>}
+        {userShow&&<button style={{fontSize:"30px"}} onClick={handleReset}>Search Another Show</button>}
       </form>
       
       {userShow&&<UserShowSearch show={userShow}/>}

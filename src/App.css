@@ -5,14 +5,15 @@
 }
 .container {
   /* padding: 8rem; */
-  padding-top: 5%;
+  padding-top: 2%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2rem;
   margin-top: 2rem;
+  margin-left: 5%;
 }
 .App h1{
-  padding-top: 5%;
+  padding-top: 3%;
     font-size: 50px;
 }
 .App h2{
@@ -20,7 +21,3 @@
     font-size: 35px;
 }
 
-.App form{
-  font-size: 25px;
-
-}

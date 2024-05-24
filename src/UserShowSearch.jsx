@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import "./UserShowSearch.css";
 // import {v4 as uuid} from "uuid";
 
 import "./MyTopTen.css";
@@ -40,13 +41,12 @@ fetchHandler();
     ifValid?(<div><h2>Here you go!</h2>  <div className='showContainer'>
         
         
-     <div style={{fontSize:"40px", fontWeight:"bolder"}}>{show.name}</div>
-     <img src={image} style={{width:"400px", maxHeight:"500px"}}/>     
-     <div style={{fontSize:"20px"}}>Language: {show.language}</div>      
-     <div style={{fontSize:"20px"}}>Average Rating: {rating}</div>
-     <a style={{fontSize:"20px", color:"black"}} href={show.officialSite}>Official Site: {show.officialSite}</a>
-     <div style={{fontSize:"20px"}}>{summary}</div>    
-    </div> </div>):(<h2>Sorry, could not find it. Enter a valid TV Show Name.</h2>)
+        <div style={{fontSize:"40px", fontWeight:"bolder"}}>{show.name}</div>
+     <div><img src={image} style={{ width:"30%", maxHeight:"600px"}}/>  </div>   
+     <div style={{fontSize:"30px"}}>Language: {show.language}</div>      
+     <div style={{fontSize:"30px"}}>Average Rating: {rating}</div>
+     <div style={{fontSize:"30px", display:"flex", flexDirection:"column"}}> Official Site: <a  style={{color:"black"}} href={show.officialSite}>{show.officialSite}</a></div>
+     <div style={{fontSize:"20px"}}>{summary}</div></div></div>):(<h2>Sorry, could not find it. Enter a valid TV Show Name.</h2>)
     
     // <h2>Enter a valid TV Show.</h2>
 )
